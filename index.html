@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T Prabhakar Patra | Resume Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-profile">
+                <h1 id="name">Name Placeholder</h1>
+                <p id="role">Role Placeholder</p>
+            </div>
+            <div class="header-contact" id="contact-info">
+                <!-- Populated by JS -->
+            </div>
+        </header>
+
+        <!-- Column 1: Skills & Info -->
+        <div class="col">
+            <div class="card" style="flex: 0 0 auto;">
+                <h2>Core Skills</h2>
+                <div class="skill-tags" id="tech-skills"></div>
+            </div>
+
+            <div class="card" style="flex: 1;">
+                <h2>Certifications</h2>
+                <ul class="list-simple" id="certifications"></ul>
+            </div>
+
+            <div class="card" style="flex: 0 0 auto;">
+                <h2>Languages & Interests</h2>
+                <div class="skill-tags" id="misc-skills"></div>
+            </div>
+        </div>
+
+        <!-- Column 2: Main Content (Experience) -->
+        <div class="col" style="flex: 2;">
+            <div class="card" style="flex: 0 0 auto;">
+                <h2>Professional Summary</h2>
+                <p class="exp-desc" id="summary"></p>
+            </div>
+
+            <div class="card" style="flex: 1;">
+                <h2>Experience & Internships</h2>
+                <div id="experience-list"></div>
+            </div>
+        </div>
+
+        <!-- Column 3: Stats & Education -->
+        <div class="col">
+            <div class="card">
+                <h2>Education</h2>
+                <div id="education-list"></div>
+            </div>
+
+            <div class="card" style="flex: 1;">
+                <h2>Key Projects</h2>
+                <div id="project-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot UI -->
+    <div id="chat-widget">
+        <button id="chat-toggle-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h3>Chat with AI</h3>
+                <button id="chat-close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <p>Hi! I'm an AI assistant trained on Prabhakar's resume. Ask me anything!</p>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
